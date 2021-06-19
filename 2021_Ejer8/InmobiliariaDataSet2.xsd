@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InmobiliariaDataSet2" targetNamespace="http://tempuri.org/InmobiliariaDataSet2.xsd" xmlns:mstns="http://tempuri.org/InmobiliariaDataSet2.xsd" xmlns="http://tempuri.org/InmobiliariaDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="InmobiliariaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InmobiliariaConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings._2021_Ejer8.My.MySettings.GlobalReference.Default.InmobiliariaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_ClientesTableAdapter" GeneratorDataComponentClassName="View_ClientesTableAdapter" Name="View_Clientes" UserDataComponentName="View_ClientesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InmobiliariaConnectionString (MySettings)" DbObjectName="Inmobiliaria.dbo.View_Clientes" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ApelNom, IdCliente, Apellido, Nombre, IdTipoDoc, NDoc, FechaNac, Direccion, IdLocalidad, Cel, Email, Activo, Observaciones, TipoDoc, Localidad FROM dbo.View_Clientes</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ApelNom" DataSetColumn="ApelNom" />
+              <Mapping SourceColumn="IdCliente" DataSetColumn="IdCliente" />
+              <Mapping SourceColumn="Apellido" DataSetColumn="Apellido" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="IdTipoDoc" DataSetColumn="IdTipoDoc" />
+              <Mapping SourceColumn="NDoc" DataSetColumn="NDoc" />
+              <Mapping SourceColumn="FechaNac" DataSetColumn="FechaNac" />
+              <Mapping SourceColumn="Direccion" DataSetColumn="Direccion" />
+              <Mapping SourceColumn="IdLocalidad" DataSetColumn="IdLocalidad" />
+              <Mapping SourceColumn="Cel" DataSetColumn="Cel" />
+              <Mapping SourceColumn="Email" DataSetColumn="Email" />
+              <Mapping SourceColumn="Activo" DataSetColumn="Activo" />
+              <Mapping SourceColumn="Observaciones" DataSetColumn="Observaciones" />
+              <Mapping SourceColumn="TipoDoc" DataSetColumn="TipoDoc" />
+              <Mapping SourceColumn="Localidad" DataSetColumn="Localidad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InmobiliariaDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="InmobiliariaDataSet2" msprop:Generator_UserDSName="InmobiliariaDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_Clientes" msprop:Generator_TableClassName="View_ClientesDataTable" msprop:Generator_TableVarName="tableView_Clientes" msprop:Generator_TablePropName="View_Clientes" msprop:Generator_RowDeletingName="View_ClientesRowDeleting" msprop:Generator_RowChangingName="View_ClientesRowChanging" msprop:Generator_RowEvHandlerName="View_ClientesRowChangeEventHandler" msprop:Generator_RowDeletedName="View_ClientesRowDeleted" msprop:Generator_UserTableName="View_Clientes" msprop:Generator_RowChangedName="View_ClientesRowChanged" msprop:Generator_RowEvArgName="View_ClientesRowChangeEvent" msprop:Generator_RowClassName="View_ClientesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApelNom" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnApelNom" msprop:Generator_ColumnPropNameInRow="ApelNom" msprop:Generator_ColumnPropNameInTable="ApelNomColumn" msprop:Generator_UserColumnName="ApelNom" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="62" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdCliente" msprop:Generator_ColumnVarNameInTable="columnIdCliente" msprop:Generator_ColumnPropNameInRow="IdCliente" msprop:Generator_ColumnPropNameInTable="IdClienteColumn" msprop:Generator_UserColumnName="IdCliente" type="xs:int" />
+              <xs:element name="Apellido" msprop:Generator_ColumnVarNameInTable="columnApellido" msprop:Generator_ColumnPropNameInRow="Apellido" msprop:Generator_ColumnPropNameInTable="ApellidoColumn" msprop:Generator_UserColumnName="Apellido">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdTipoDoc" msprop:Generator_ColumnVarNameInTable="columnIdTipoDoc" msprop:Generator_ColumnPropNameInRow="IdTipoDoc" msprop:Generator_ColumnPropNameInTable="IdTipoDocColumn" msprop:Generator_UserColumnName="IdTipoDoc" type="xs:int" />
+              <xs:element name="NDoc" msprop:Generator_ColumnVarNameInTable="columnNDoc" msprop:Generator_ColumnPropNameInRow="NDoc" msprop:Generator_ColumnPropNameInTable="NDocColumn" msprop:Generator_UserColumnName="NDoc" type="xs:int" />
+              <xs:element name="FechaNac" msprop:Generator_ColumnVarNameInTable="columnFechaNac" msprop:Generator_ColumnPropNameInRow="FechaNac" msprop:Generator_ColumnPropNameInTable="FechaNacColumn" msprop:Generator_UserColumnName="FechaNac" type="xs:dateTime" />
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdLocalidad" msprop:Generator_ColumnVarNameInTable="columnIdLocalidad" msprop:Generator_ColumnPropNameInRow="IdLocalidad" msprop:Generator_ColumnPropNameInTable="IdLocalidadColumn" msprop:Generator_UserColumnName="IdLocalidad" type="xs:int" />
+              <xs:element name="Cel" msprop:Generator_ColumnVarNameInTable="columnCel" msprop:Generator_ColumnPropNameInRow="Cel" msprop:Generator_ColumnPropNameInTable="CelColumn" msprop:Generator_UserColumnName="Cel">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Activo" msprop:Generator_ColumnVarNameInTable="columnActivo" msprop:Generator_ColumnPropNameInRow="Activo" msprop:Generator_ColumnPropNameInTable="ActivoColumn" msprop:Generator_UserColumnName="Activo" type="xs:boolean" />
+              <xs:element name="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" msprop:Generator_UserColumnName="Observaciones" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoDoc" msprop:Generator_ColumnVarNameInTable="columnTipoDoc" msprop:Generator_ColumnPropNameInRow="TipoDoc" msprop:Generator_ColumnPropNameInTable="TipoDocColumn" msprop:Generator_UserColumnName="TipoDoc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Localidad" msprop:Generator_ColumnVarNameInTable="columnLocalidad" msprop:Generator_ColumnPropNameInRow="Localidad" msprop:Generator_ColumnPropNameInTable="LocalidadColumn" msprop:Generator_UserColumnName="Localidad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Clientes" />
+      <xs:field xpath="mstns:IdCliente" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
